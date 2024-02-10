@@ -7,12 +7,15 @@ public class Main {
 
         System.out.print("Original array: ");
         printArray(array);
-
-        insertionSort(array);
+// creating sort function to call the insertionSort function
+        sort(array);
 
         System.out.print("Sorted array: ");
         printArray(array);
     }
+    public static void sort(int[] array) {
+        insertionSort(array);
+        } 
 // insertionSort for array 
     public static void insertionSort(int[] arr) {
         int n = arr.length;
