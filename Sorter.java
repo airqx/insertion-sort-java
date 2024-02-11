@@ -12,19 +12,16 @@ public class Sorter {
             arr[i] = smallerNumber;
         }
     }
+    // New sort method that calls selection sort
+    public static void sort(int[] array) {
+        selectionSort(array);
+    }
 
-    public static void main(String[] args) {
+    public static void printArray(int[] testArray) {
         // Test the selection sort method
-        int[] testArray = {6804, 34, 555, 12, 22, 11, 93};
-        selectionSort(testArray);
         for (int i : testArray) {
             System.out.print(i + " ");
         }
+        System.out.println();
     }
-
-        // New sort method that calls selection sort
-        public static void sort(int[] array) {
-            selectionSort(array);
-        }
-    }
-
+}
