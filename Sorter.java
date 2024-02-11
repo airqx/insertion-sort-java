@@ -21,9 +21,4 @@ public class Sorter {
             System.out.print(i + " ");
         }
     }
-
-    // New sort method that calls previous selection sort
-    public static void sort(int[] array) {
-        selectionSort(array);
-    }
 }
